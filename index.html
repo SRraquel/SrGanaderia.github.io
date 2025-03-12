@@ -1,23 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ganaderia y Vida en el Campo</title>
+    <title>Ganadería y Vida en el Campo</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5dc;
+            color: #4a3d2f;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6b4226;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+        }
+        nav {
+            background-color: #8b5a2b;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #aaa;
+        }
+        h2 {
+            color: #6b4226;
+            border-bottom: 2px solid #8b5a2b;
+            padding-bottom: 5px;
+        }
+        .tipo-ganaderia {
+            display: flex;
+            justify-content: space-between;
+        }
+        .tipo-ganaderia div {
+            width: 48%;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f0e6d2;
+            box-shadow: 0px 0px 5px #aaa;
+        }
+        .importancia {
+            background-color: #efe0c0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px #aaa;
+        }
+    </style>
 </head>
-<body style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
-    
-    <h2>Secciones de la Página</h2>
-    <a href="#historia">Historia de la Ganadería</a>
-    <a href="#tipos">Tipos de Ganadería</a>
-    <a href="#importancia">Importancia del Campo</a>
-    <a href="#caracteristicas">caracteristicas</a>
-    <div style="background-color:forestgreen; padding: 10px;">
-        <h1 style="color:goldenrod;"><em><u>Ganadería y Vida Rural</u></em></h1>
-    </div>
-    
-    <section id="historia">
-        <h2 style="color:brown;">Historia de la Ganadería</h2>
+<body>
+    <header>Ganadería y Vida Rural</header>
+    <nav>
+        <a href="#historia">Historia</a>
+        <a href="#tipos">Tipos</a>
+        <a href="#importancia">Importancia</a>
+    </nav>
+    <div class="container">
+        <section id="historia">
+            <h2>Historia de la Ganadería</h2>
+            <p>La ganadería es una de las actividades económicas más antiguas del ser humano...</p>
+        </section>
+        
+        
 
         <p>
             <strong>La ganadería</strong> es una de las actividades económicas más antiguas del ser humano. Desde la domesticación
@@ -56,12 +114,29 @@
         </p>
         <img src="img/campo.jpeg" alt="vacas_1" width="200">
     </section>
-    
+    <section id="tipos">
+        <h2>Tipos de Ganadería</h2>
+        <div class="tipo-ganaderia">
+            <div>
     <section id="tipos">
         <h2 style="color:brown;">Tipos de Ganadería</h2>
         <ul>
-            <li><strong>Ganadería Extensiva:</strong> Se practica en grandes terrenos con alimentación natural.</li>
-            <li><strong>Ganadería Intensiva:</strong> Se realiza en espacios reducidos con técnicas de producción moderna.</li>
+            <li><strong>Ganadería Extensiva:</strong> Se practica en grandes terrenos con alimentación natural.
+                <p>La ganadería extensiva es un sistema de producción animal que se desarrolla en grandes extensiones de terreno, 
+                    donde el ganado se alimenta principalmente de pastos naturales. Este método es más sostenible que la ganadería intensiva, 
+                    ya que favorece la biodiversidad y reduce la contaminación del suelo y el agua. Sin embargo, requiere más espacio y 
+                    puede verse afectado por condiciones climáticas adversas. Es común en regiones con abundantes pastizales, como la Pampa argentina 
+                    o el oeste de Estados Unidos. Además, promueve el bienestar animal al permitirles moverse libremente. Aunque su productividad es menor, 
+                    es clave para la producción de carne y leche de calidad. También contribuye a la conservación de ecosistemas naturales.</p></li>
+            <li><strong>Ganadería Intensiva:</strong> Se realiza en espacios reducidos con técnicas de producción moderna.
+                <p>La ganadería intensiva es un sistema de producción animal que busca maximizar la productividad 
+                    en espacios reducidos mediante el uso de tecnología y alimentación controlada. 
+                    Este modelo permite obtener grandes cantidades de carne, leche o huevos en menor tiempo, 
+                    pero tiene un alto impacto ambiental debido al uso de recursos como agua y granos. 
+                    Además, puede generar problemas de bienestar animal por el confinamiento en espacios reducidos. 
+                    Es común en zonas urbanizadas y países con alta demanda de productos ganaderos. 
+                    Su eficiencia económica la hace popular en la industria alimentaria global. 
+                    Sin embargo, enfrenta críticas por su impacto ecológico y ético.</p></li>
         </ul>
     </section>
     <section id="caracteristicas">
